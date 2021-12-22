@@ -4,7 +4,7 @@ When air-dropping images between Apple devices images are transferred with a .HE
 
 This Docker container has been published to a public registry  [george7522/heic2jpg](https://hub.docker.com/repository/docker/george7522/heic2jpg) so the build step below is not required.
 
-![](2021-12-22 00.32.29.gif)
+![gif](2021-12-22_00.32.29.gif)
 
 Prerequisites:
 - Install docker https://docs.docker.com/get-docker/
