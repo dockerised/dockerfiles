@@ -2,7 +2,6 @@
 
 When air-dropping images between Apple devices images are transferred with a .HEIC format which most other platforms do not support. Using Docker makes it work for Windows and MacOS.
 
-This Docker container has been published to a public registry  [george7522/heic2jpg](https://hub.docker.com/repository/docker/george7522/heic2jpg) so the build step below is not required.
 
 ![gif](2021-12-22_00.32.29.gif)
 
@@ -43,7 +42,9 @@ docker run -e DELETE_MODE=true -v ~/Downloads/ConvertMe:/imgs george7522/heic2jp
 
 docker run --rm -it -e DELETE_MODE=true -v $(pwd)/imgs/:/imgs/ george7522/heic2jpg:0.15
 
-## 2. Run the converter with build 
+## 2. Run the converter with build step
+
+This Docker container has been published to a public registry  [george7522/heic2jpg](https://hub.docker.com/repository/docker/george7522/heic2jpg) so the build step below is not required.
 
 ### 2a) Windows
 
