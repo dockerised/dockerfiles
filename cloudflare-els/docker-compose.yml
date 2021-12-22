@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  els:
+    build: .
+    volumes:
+      - ~/ELS:/app/ELS
+      - ./cloudflare_logs.sh:/app/cloudflare_logs.sh
+    environment:
+      - CLOUDFLARE_EMAIL
+      - CLOUDFLARE_KEY
+      - CLOUDFLARE_ZONE_ID
