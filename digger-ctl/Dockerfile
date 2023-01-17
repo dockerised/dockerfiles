@@ -13,7 +13,7 @@ ENV ARCH=x86_64
 
 
 #
-# Install AWSCli
+# Install DiggerCTL
 #
 RUN npm install -g dgctl@${DIGGERCTL_VERSION}
 
@@ -43,7 +43,8 @@ RUN apk add --no-cache --virtual .dependencies binutils curl \
         /usr/local/aws-cli/v2/*/dist/awscli/data/ac.index \
         /usr/local/aws-cli/v2/*/dist/awscli/examples \
         glibc-*.apk \
-    && apk del --purge .dependencies
+    && apk del --purge .dependencies \
+    && aws --version
 
 #
 # Install Terraform  
